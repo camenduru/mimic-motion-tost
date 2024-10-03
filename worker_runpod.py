@@ -6,6 +6,7 @@ import numpy as np
 
 import nodes
 import gc
+import shutil
 
 import asyncio
 import execution
