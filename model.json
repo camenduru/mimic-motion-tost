@@ -1,5 +1,5 @@
 {
-    "input_image": "https://files.catbox.moe/apawb7.png",
+    "input_image": "https://files.catbox.moe/hyem8m.png",
     "seed": 42,
     "max_new_tokens": 150,
     "controlnet_strength": 0.6,
