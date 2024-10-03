@@ -7,6 +7,8 @@ https://tost.ai
 
 ### 🧬 Code
 https://github.com/Tencent/MimicMotion <br />
+https://github.com/KwaiVGI/LivePortrait <br />
+https://github.com/tencent-ailab/IP-Adapter <br />
 https://github.com/comfyanonymous/ComfyUI <br />
 https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite <br />
 https://github.com/kijai/ComfyUI-KJNodes <br />
@@ -25,10 +27,14 @@ https://github.com/kijai/ComfyUI-LivePortraitKJ <br />
 https://github.com/Fannovel16/ComfyUI-Frame-Interpolation <br />
 
 ### 📄 Paper
-https://arxiv.org/abs/2406.19680
+https://arxiv.org/abs/2406.19680 <br />
+https://arxiv.org/abs/2407.03168 <br />
+https://arxiv.org/abs/2308.06721 <br />
 
 ### 🌐 Page
-https://tencent.github.io/MimicMotion/
+https://tencent.github.io/MimicMotion/ <br />
+https://liveportrait.github.io/ <br />
+https://ip-adapter.github.io/ <br />
 
 ### 🖼 Output
 
