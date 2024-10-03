@@ -32,7 +32,6 @@ RUN pip install -q opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod 
     git clone https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved /content/ComfyUI/custom_nodes/ComfyUI-AnimateDiff-Evolved && \
     git clone https://github.com/kijai/ComfyUI-LivePortraitKJ /content/ComfyUI/custom_nodes/ComfyUI-LivePortraitKJ && \
     git clone https://github.com/Fannovel16/ComfyUI-Frame-Interpolation /content/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation && \
-    git clone https://github.com/kijai/ComfyUI-LivePortraitKJ /content/ComfyUI/custom_nodes/ComfyUI-LivePortraitKJ && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/MimicMotion/resolve/main/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors -d /content/ComfyUI/models/clip_vision -o CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/MimicMotion/resolve/main/MimicMotionMergedUnet_1-1-fp16.safetensors -d /content/ComfyUI/models/mimicmotion -o MimicMotionMergedUnet_1-1-fp16.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/MimicMotion/resolve/main/control_v11f1p_sd15_depth_fp16.safetensors -d /content/ComfyUI/models/controlnet -o control_v11f1p_sd15_depth_fp16.safetensors && \
