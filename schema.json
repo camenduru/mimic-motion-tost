@@ -1,0 +1,148 @@
+{
+    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+    "type": "object",
+    "properties": {
+      "readme": {
+        "type": "string",
+        "title": "MimicMotion: High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance",
+        "author": "Yuang Zhang, Jiaxi Gu, Li-Wen Wang, Han Wang, Junqi Cheng, Yuefeng Zhu, Fangyuan Zou",
+        "page": "https://tencent.github.io/MimicMotion/",
+        "code": "https://github.com/Tencent/MimicMotion",
+        "paper": "https://arxiv.org/abs/2406.19680",
+        "jupyter": "https://github.com/camenduru/MimicMotion-jupyter",
+        "api": "https://github.com/camenduru/tost-api-examples/blob/main/v1/mimic-motion.ipynb",
+        "tags": [
+          "Image to Video"
+        ],
+        "widget": "readme"
+      },
+      "upload": {
+        "type": "string",
+        "widget": "upload",
+        "upload_url": "https://litterbox.catbox.moe/resources/internals/api.php",
+        "property": "input_image"
+      },
+      "input_image": {
+        "type": "string",
+        "description": "Input Image URL",
+        "widget": "textarea"
+      },
+      "seed": {
+        "type": "integer",
+        "description": "Seed (if 0 random)"
+      },
+      "max_new_tokens": {
+        "type": "integer",
+        "description": "Max New Tokens"
+      },
+      "controlnet_strength": {
+        "type": "number",
+        "description": "ControlNet Strength",
+        "minimum": 0.5,
+        "maximum": 1.0,
+        "widget": "select",
+        "oneOf": [
+          {
+            "description": "0.5",
+            "enum": [
+              0.5
+            ]
+          },
+          {
+            "description": "0.55",
+            "enum": [
+              0.55
+            ]
+          },
+          {
+            "description": "0.6",
+            "enum": [
+              0.6
+            ]
+          },
+          {
+            "description": "0.65",
+            "enum": [
+              0.65
+            ]
+          },
+          {
+            "description": "0.7",
+            "enum": [
+              0.7
+            ]
+          },
+          {
+            "description": "0.75",
+            "enum": [
+              0.75
+            ]
+          },
+          {
+            "description": "0.8",
+            "enum": [
+              0.8
+            ]
+          },
+          {
+            "description": "0.85",
+            "enum": [
+              0.85
+            ]
+          },
+          {
+            "description": "0.9",
+            "enum": [
+              0.9
+            ]
+          },
+          {
+            "description": "0.95",
+            "enum": [
+              0.95
+            ]
+          },
+          {
+            "description": "1.0",
+            "enum": [
+              1.0
+            ]
+          }
+        ],
+        "default": 0.6
+      },
+      "context_size": {
+        "type": "integer",
+        "description": "Context Size",
+        "widget": "hidden"
+      },
+      "video_file": {
+        "type": "string",
+        "description": "Song",
+        "widget": "select",
+        "oneOf": [
+          {
+            "description": "how_far_i_ll_go.mp4",
+            "enum": [
+              "how_far_i_ll_go.mp4"
+            ]
+          }
+        ],
+        "default": "how_far_i_ll_go.mp4"
+      },
+      "example": {
+        "type": "string",
+        "image1": "https://fakeimg.pl/512x512/282828/eae0d0/?text=input#.png",
+        "image2": "https://files.catbox.moe/hyem8m.png",
+        "image3": "https://fakeimg.pl/512x512/282828/eae0d0/?text=output#.png",
+        "image4": "https://files.catbox.moe/yyat67.mp4",
+        "widget": "example"
+      }
+    },
+    "buttons": [
+      {
+        "id": "enter",
+        "label": "🥪 Enter"
+      }
+    ]
+}

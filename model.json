@@ -1,0 +1,8 @@
+{
+    "input_image": "https://files.catbox.moe/apawb7.png",
+    "seed": 42,
+    "max_new_tokens": 150,
+    "controlnet_strength": 0.6,
+    "context_size": 72,
+    "video_file": "how_far_i_ll_go.mp4"
+}
