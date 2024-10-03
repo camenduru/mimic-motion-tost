@@ -6,7 +6,23 @@
 https://tost.ai
 
 ### 🧬 Code
-https://github.com/Tencent/MimicMotion
+https://github.com/Tencent/MimicMotion <br />
+https://github.com/comfyanonymous/ComfyUI <br />
+https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite <br />
+https://github.com/kijai/ComfyUI-KJNodes <br />
+https://github.com/Fannovel16/comfyui_controlnet_aux <br />
+https://github.com/cubiq/ComfyUI_essentials <br />
+https://github.com/aidenli/ComfyUI_NYJY <br />
+https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet <br />
+https://github.com/cubiq/ComfyUI_IPAdapter_plus <br />
+https://github.com/Layer-norm/comfyui-lama-remover <br />
+https://github.com/kijai/ComfyUI-MimicMotionWrapper <br />
+https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait <br />
+https://github.com/storyicon/comfyui_segment_anything <br />
+https://github.com/Gourieff/comfyui-reactor-node <br />
+https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved <br />
+https://github.com/kijai/ComfyUI-LivePortraitKJ <br />
+https://github.com/Fannovel16/ComfyUI-Frame-Interpolation <br />
 
 ### 📄 Paper
 https://arxiv.org/abs/2406.19680
