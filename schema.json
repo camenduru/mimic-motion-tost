@@ -145,7 +145,8 @@
         "image1": "https://fakeimg.pl/480x720/282828/eae0d0/?text=input#.png",
         "image2": "https://files.catbox.moe/34n88r.png",
         "image3": "https://fakeimg.pl/480x720/282828/eae0d0/?text=output#.png",
-        "image4": "https://files.catbox.moe/t2azg8.gif",
+        "image4": "https://files.catbox.moe/8gihvi.mp4",
+        "video_aspect_ratio": "150%",
         "widget": "example"
       }
     },
