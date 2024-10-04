@@ -123,13 +123,15 @@ def generate(input):
     controlnet_strength = values['controlnet_strength']
     context_size = values['context_size']
     video_file = values['video_file']
+    frame_load_cap = values['frame_load_cap']
+    skip_first_frames = values['skip_first_frames']
     
     if seed == 0:
         random.seed(int(time.time()))
         seed = random.randint(0, 18446744073709551615)
     print(seed)
 
-    video_images, frame_count, audio, video_info = VHS_LoadVideo.load_video(video=video_file, force_rate=30, force_size="Disabled", custom_width=512, custom_height=512, frame_load_cap=142, skip_first_frames=1350, select_every_nth=1)
+    video_images, frame_count, audio, video_info = VHS_LoadVideo.load_video(video=video_file, force_rate=30, force_size="Disabled", custom_width=512, custom_height=512, frame_load_cap=frame_load_cap, skip_first_frames=skip_first_frames, select_every_nth=1)
     source_image = ImageResizeKJ.resize(video_images, width=512, height=768, keep_proportion=False, upscale_method="nearest-exact", divisible_by=2, crop="center")[0]
     source_image = VHS_SelectEveryNthImage.select_images(images=source_image, select_every_nth=2, skip_first_images=0)[0]
     source_image_count = source_image.size(0)
@@ -140,7 +142,7 @@ def generate(input):
     prompt = "A descriptive caption for this image"
     top_k = 10
     temperature = 0.50
-    clear_cache = True
+    clear_cache = False
     src_image = LoadImage.load_image(src_image)[0]
     positive_prompt = JoyCaption.run_local("Meta-Llama-3.1-8B-bnb-4bit", src_image, prompt, max_new_tokens, top_k, temperature, clear_cache)[0]
     negative_prompt = "text, watermark"

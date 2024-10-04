@@ -4,5 +4,7 @@
     "max_new_tokens": 150,
     "controlnet_strength": 0.6,
     "context_size": 72,
+    "frame_load_cap": 142,
+    "skip_first_frames": 1350,
     "video_file": "how_far_i_ll_go.mp4"
 }

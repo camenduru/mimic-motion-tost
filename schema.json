@@ -116,6 +116,16 @@
         "description": "Context Size",
         "widget": "hidden"
       },
+      "frame_load_cap": {
+        "type": "integer",
+        "description": "Frame Load Cap",
+        "widget": "hidden"
+      },
+      "skip_first_frames": {
+        "type": "integer",
+        "description": "Skip First Frames",
+        "widget": "hidden"
+      },
       "video_file": {
         "type": "string",
         "description": "Song",
