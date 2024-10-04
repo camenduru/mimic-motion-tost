@@ -44,6 +44,7 @@ RUN pip install -q opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod 
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/MimicMotion/resolve/main/how_far_i_ll_go.mp4 -d /content/ComfyUI/input -o how_far_i_ll_go.mp4 && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/MimicMotion/resolve/main/sam_hq_vit_h.pth -d /content/ComfyUI/models/sams -o sam_hq_vit_h.pth && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/MimicMotion/resolve/main/groundingdino_swint_ogc.pth -d /content/ComfyUI/models/grounding-dino -o groundingdino_swint_ogc.pth && \
+    aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ShilongLiu/GroundingDINO/resolve/main/GroundingDINO_SwinT_OGC.cfg.py -d /content/ComfyUI/models/grounding-dino -o GroundingDINO_SwinT_OGC.cfg.py && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/LivePortrait_InsightFace/resolve/main/liveportrait/human/appearance_feature_extractor.safetensors -d /content/ComfyUI/models/liveportrait -o appearance_feature_extractor.safetensors && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/LivePortrait_InsightFace/resolve/main/liveportrait/human/landmark.onnx -d /content/ComfyUI/models/liveportrait -o landmark.onnx && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/camenduru/LivePortrait_InsightFace/resolve/main/liveportrait/human/landmark_model.pth -d /content/ComfyUI/models/liveportrait -o landmark_model.pth && \
@@ -88,7 +89,8 @@ RUN pip install -q opencv-python imageio imageio-ffmpeg ffmpeg-python av runpod 
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/hr16/yolox-onnx/resolve/main/yolox_l.torchscript.pt -d /content/ComfyUI/custom_nodes/ComfyUI-MimicMotionWrapper/models/DWPose -o yolox_l.torchscript.pt && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/hr16/DWPose-TorchScript-BatchSize5/resolve/main/dw-ll_ucoco_384_bs5.torchscript.pt -d /content/ComfyUI/custom_nodes/ComfyUI-MimicMotionWrapper/models/DWPose -o dw-ll_ucoco_384_bs5.torchscript.pt && \
     aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth -d /content/ComfyUI/models/facedetection -o detection_Resnet50_Final.pth && \
-    aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/parsing_parsenet.pth -d /content/ComfyUI/models/facedetection -o parsing_parsenet.pth
+    aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/parsing_parsenet.pth -d /content/ComfyUI/models/facedetection -o parsing_parsenet.pth && \
+    aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/Sanster/models/releases/download/add_big_lama/big-lama.pt -d /content/ComfyUI/custom_nodes/comfyui-lama-remover/ckpts -o big-lama.pt
 
 COPY ./worker_runpod.py /content/ComfyUI/worker_runpod.py
 WORKDIR /content/ComfyUI
